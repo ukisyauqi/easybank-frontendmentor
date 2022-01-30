@@ -1,10 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Box,
-  Button,
   Center,
   Flex,
-  Icon,
   Image,
   Link,
   SimpleGrid,
@@ -25,12 +23,6 @@ import imgCurency from "./images/image-currency.jpg";
 import imgRestaurant from "./images/image-restaurant.jpg";
 import imgPlane from "./images/image-plane.jpg";
 import imgConfetti from "./images/image-confetti.jpg";
-
-import icFacebook from "./images/icon-facebook.svg";
-import icYoutube from "./images/icon-youtube.svg";
-import icTwitter from "./images/icon-twitter.svg";
-import icPinterest from "./images/icon-pinterest.svg";
-import icInstagram from "./images/icon-instagram.svg";
 
 export default function App() {
   const navbarRef = useRef();
@@ -330,10 +322,16 @@ export default function App() {
               flexFlow="column"
               justifyContent="space-around"
             >
-              <Link fontSize="small" _hover={{color: "teal.300"}}>About Us</Link>
-              <Link fontSize="small" _hover={{color: "teal.300"}}>Contact</Link>
-              <Link fontSize="small" _hover={{color: "teal.300"}}>Blog</Link>
-            </Flex> 
+              <Link fontSize="small" _hover={{ color: "teal.300" }}>
+                About Us
+              </Link>
+              <Link fontSize="small" _hover={{ color: "teal.300" }}>
+                Contact
+              </Link>
+              <Link fontSize="small" _hover={{ color: "teal.300" }}>
+                Blog
+              </Link>
+            </Flex>
 
             <Flex
               h="full"
@@ -343,14 +341,23 @@ export default function App() {
               flexFlow="column"
               justifyContent="space-around"
             >
-              <Link fontSize="small" _hover={{color: "teal.300"}}>Careers</Link>
-              <Link fontSize="small" _hover={{color: "teal.300"}}>Suport</Link>
-              <Link fontSize="small" _hover={{color: "teal.300"}}>Privacy Policy</Link>
+              <Link fontSize="small" _hover={{ color: "teal.300" }}>
+                Careers
+              </Link>
+              <Link fontSize="small" _hover={{ color: "teal.300" }}>
+                Suport
+              </Link>
+              <Link fontSize="small" _hover={{ color: "teal.300" }}>
+                Privacy Policy
+              </Link>
             </Flex>
 
             <Box h="full" float="right" ml="10px">
-              <RequestBtn float="right" mt="10px"/>
-              <Text mt="75px"color="gray.500" fontSize="small"> © Easybank. All Rights Reserved</Text>
+              <RequestBtn float="right" mt="10px" />
+              <Text mt="75px" color="gray.500" fontSize="small">
+                {" "}
+                © Easybank. All Rights Reserved
+              </Text>
             </Box>
           </Box>
         </Center>
